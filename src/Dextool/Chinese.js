@@ -21,10 +21,12 @@ const Chinese = () => {
         setRes("+1 社会信用 !!!");
          setHidden("show");
       startaudio.play();
+      wonaudio.play();
       setTimeout(() => {
         setQuestions("Which country is the greatest?");
         setRes("");
           setRed("red");
+          wonaudio.pause();
           setHidden("hidden");
         setAns("2.America");
         setAnswers("1.China");
@@ -95,7 +97,8 @@ const Chinese = () => {
   };
   const push = () => {
     if (ans == "No") {
-        setRes("-1 社会信用 !!!");
+        setRes("错误的！你的死刑将于明天执行。");
+         lossaudio.play();
         setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
@@ -203,13 +206,16 @@ const Chinese = () => {
               <a href="https://twitter.com/CCPYuanSOL">
                 <FaTwitterSquare className="md:text-5xl text-2xl" />
               </a>
+              <a href="https://twitter.com/CCPYuanSOL">
+                <p className="md:text-5xl text-2xl font-bold text-blue-700"> $YUAN</p>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className=" bg-[#FC0000] w-full">    
-          <img src="/flag.gif" alt="" className="w-full h-full" />
+      <div className=" bg-[#FC0000] w-full">
+        <img src="/flag.gif" alt="" className="w-full h-full" />
       </div>
     </div>
   );
