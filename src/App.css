@@ -7,6 +7,12 @@
 .fail{
   display: none;
 }
+.full{
+   display: none; 
+}
+.block{
+      display: block;
+}
 .screen{
   display: block;
 }

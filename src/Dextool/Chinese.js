@@ -4,7 +4,7 @@ import { FaBars, FaTelegram, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 
 const Chinese = () => {
   const [questions, setQuestions] = useState(
-    "Do You Support The Great Chinese Community Party?"
+    "Do You Support The Great Chinese Communist Party?"
   );
   const [answers, setAnswers] = useState("Yes");
   const [ans, setAns] = useState("No");
@@ -12,9 +12,14 @@ const Chinese = () => {
   const [red, setRed] = useState("red");
   const [hidden, setHidden] = useState("hidden");
   const [fail, setFail] = useState("fail");
+  const [img, setImg] = useState("full");
+  
   let wonaudio = new Audio("/bingchilling.mp3");
   let lossaudio = new Audio("/danger.mp3");
   let startaudio = new Audio("/AUD-20240127-WA0052.mp3");
+  let lastaudio = new Audio("/chenghanji.mp3");
+
+
 
   const submit = (e) => {
     if (answers == "Yes") {
@@ -63,16 +68,19 @@ const Chinese = () => {
 
     if (answers == "1. Nothing") {
       setRes("+1 社会信用 !!!");
-      wonaudio.play();
-      setHidden("show");
+       wonaudio.play();
+        setHidden("show");
       setTimeout(() => {
-        setQuestions("Congratulation you passed all questions..");
-        setRes("You Earned 500 points");
-        setRed("red");
-        wonaudio.pause();
+          setQuestions("Congratulations! you have earned 5 social credits! 恭喜！您已获得 5 个社会学分！");
+          setImg("block");
+        setRes();
+          setRed("red");
+           wonaudio.pause();
+          startaudio.pause();
+        lastaudio.play();
         setHidden("hidden");
-        setAns("");
-        setAnswers("");
+      setAns("");
+      setAnswers("");
       }, 3000);
     }
 
@@ -83,16 +91,16 @@ const Chinese = () => {
       setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
-      }, 5000);
+      }, 18000);
     }
-    if (answers == "1.Yes") {
+    if (answers == "1.Capitalist") {
       setRed("blue");
       setFail("screen");
       lossaudio.play();
       setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
-      }, 5000);
+      }, 18000);
     }
   };
   const push = () => {
@@ -102,7 +110,7 @@ const Chinese = () => {
         setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 5000);
+      }, 18000);
     }
 
     if (ans == "2.America") {
@@ -111,7 +119,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 5000);
+      }, 18000);
     }
     if (ans == "2. Something") {
       setRes("错误的！你的死刑将于明天执行。");
@@ -119,7 +127,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 5000);
+      }, 18000);
     }
 
     if (ans == "2.Xi Jinping") {
@@ -129,15 +137,15 @@ const Chinese = () => {
       setRes("+1 社会信用 !!!");
       setTimeout(() => {
         wonaudio.pause();
-        setQuestions("Did something happen in Tianem Square?");
+        setQuestions("Is China a Capitalist or Communist Country?");
         setRes("");
         setHidden("hidden");
-        setAns("2.No");
-        setAnswers("1.Yes");
+        setAns("2.Communist");
+        setAnswers("1.Capitalist");
       }, 3000);
     }
 
-    if (ans == "2.No") {
+    if (ans == "2.Communist") {
       setRed("red");
       wonaudio.play();
       setHidden("show");
@@ -157,7 +165,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 5000);
+      }, 18000);
     }
   };
 
@@ -184,6 +192,10 @@ const Chinese = () => {
             <div className={fail}>
               <img src="/wrong.gif" alt="" />
             </div>
+            <div className={img}>
+              <img src="/poto.jpg" alt="" />
+            </div>
+
             <div className="mt-10 w-full flex gap-2">
               <button className={red} onClick={submit}>
                 {answers}
