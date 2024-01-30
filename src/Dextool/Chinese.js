@@ -207,7 +207,7 @@ const Chinese = () => {
                 <FaTwitterSquare className="md:text-5xl text-2xl" />
               </a>
               <a href="https://twitter.com/CCPYuanSOL">
-                <p className="md:text-5xl text-2xl font-bold text-blue-700"> $YUAN</p>
+                <p className="md:text-5xl text-2xl font-bold "> $YUAN</p>
               </a>
             </div>
           </div>
