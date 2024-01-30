@@ -18,12 +18,14 @@ const Chinese = () => {
 
   const submit = (e) => {
     if (answers == "Yes") {
-      setRes("You are Welcome !!!");
+        setRes("+1 社会信用 !!!");
+         setHidden("show");
       startaudio.play();
       setTimeout(() => {
         setQuestions("Which country is the greatest?");
         setRes("");
-        setRed("red");
+          setRed("red");
+          setHidden("hidden");
         setAns("2.America");
         setAnswers("1.China");
       }, 3000);
@@ -76,7 +78,7 @@ const Chinese = () => {
       setRed("blue");
       lossaudio.play();
       setFail("screen");
-      setRes("Wrong Answer !!!");
+      setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
       }, 3000);
@@ -85,7 +87,7 @@ const Chinese = () => {
       setRed("blue");
       setFail("screen");
       lossaudio.play();
-      setRes("Wrong Answer !!!");
+      setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
       }, 3000);
@@ -93,14 +95,15 @@ const Chinese = () => {
   };
   const push = () => {
     if (ans == "No") {
-      setRes("bye !!!");
+        setRes("-1 社会信用 !!!");
+        setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
       }, 2000);
     }
 
     if (ans == "2.America") {
-      setRes("Wrong Answer !!!");
+      setRes("错误的！你的死刑将于明天执行。!");
       lossaudio.play();
       setFail("screen");
       setTimeout(() => {
@@ -108,7 +111,7 @@ const Chinese = () => {
       }, 3000);
     }
     if (ans == "2. Something") {
-      setRes("Wrong Answer !!!");
+      setRes("错误的！你的死刑将于明天执行。");
       lossaudio.play();
       setFail("screen");
       setTimeout(() => {
@@ -146,7 +149,7 @@ const Chinese = () => {
       }, 3000);
     }
     if (ans == "2. 30 hours") {
-      setRes("Wrong Answer !!!");
+      setRes("错误的！你的死刑将于明天执行。");
       lossaudio.play();
       setFail("screen");
       setTimeout(() => {
@@ -192,18 +195,21 @@ const Chinese = () => {
               Contract adderss:{" "}
             </p>
             <div className="pt-2 flex gap-2 md:gap-5">
-              <FaTelegram className="md:text-5xl text-2xl" />
-              <FaTwitterSquare className="md:text-5xl text-2xl" />
+              <a href="https://t.me/YuanSol">
+                {" "}
+                <FaTelegram className="md:text-5xl text-2xl" />
+              </a>
+
+              <a href="https://twitter.com/CCPYuanSOL">
+                <FaTwitterSquare className="md:text-5xl text-2xl" />
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="">
-      
-        <div className="fine w-full h-[10rem]">
-   
-        </div>
+      <div className=" h-[20rem] bg-[#FC0000]">
+        <div className="fine w-full h-[100%]"></div>
         <div>{/* <img src="/china.gif" alt="" className="w-[100%]" /> */}</div>
       </div>
     </div>
