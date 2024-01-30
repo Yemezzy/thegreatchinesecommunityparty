@@ -83,7 +83,7 @@ const Chinese = () => {
       setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
-      }, 2000);
+      }, 5000);
     }
     if (answers == "1.Yes") {
       setRed("blue");
@@ -92,7 +92,7 @@ const Chinese = () => {
       setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
-      }, 2000);
+      }, 5000);
     }
   };
   const push = () => {
@@ -102,7 +102,7 @@ const Chinese = () => {
         setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 4000);
+      }, 5000);
     }
 
     if (ans == "2.America") {
@@ -111,7 +111,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 3000);
+      }, 5000);
     }
     if (ans == "2. Something") {
       setRes("错误的！你的死刑将于明天执行。");
@@ -119,7 +119,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 3000);
+      }, 5000);
     }
 
     if (ans == "2.Xi Jinping") {
@@ -157,7 +157,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 3000);
+      }, 5000);
     }
   };
 
@@ -182,7 +182,7 @@ const Chinese = () => {
               <img src="/green.gif" alt="" />
             </div>
             <div className={fail}>
-              <img src="/red.gif" alt="" />
+              <img src="/wrong.gif" alt="" />
             </div>
             <div className="mt-10 w-full flex gap-2">
               <button className={red} onClick={submit}>
