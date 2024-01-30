@@ -83,7 +83,7 @@ const Chinese = () => {
       setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
-      }, 4000);
+      }, 2000);
     }
     if (answers == "1.Yes") {
       setRed("blue");
@@ -92,7 +92,7 @@ const Chinese = () => {
       setRes("错误的！你的死刑将于明天执行。");
       setTimeout(() => {
         window.location.href = "/";
-      }, 4000);
+      }, 2000);
     }
   };
   const push = () => {
@@ -111,7 +111,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 4000);
+      }, 3000);
     }
     if (ans == "2. Something") {
       setRes("错误的！你的死刑将于明天执行。");
@@ -119,7 +119,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 4000);
+      }, 3000);
     }
 
     if (ans == "2.Xi Jinping") {
@@ -157,7 +157,7 @@ const Chinese = () => {
       setFail("screen");
       setTimeout(() => {
         window.location.href = "/";
-      }, 4000);
+      }, 3000);
     }
   };
 
