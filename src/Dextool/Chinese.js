@@ -208,9 +208,8 @@ const Chinese = () => {
         </div>
       </div>
 
-      <div className=" h-[20rem] bg-[#FC0000]">
-        <div className="fine w-full h-[100%]"></div>
-        <div>{/* <img src="/china.gif" alt="" className="w-[100%]" /> */}</div>
+      <div className=" bg-[#FC0000] h-[200px] w-full">    
+          <img src="/flag.gif" alt="" className="w-full h-full" />
       </div>
     </div>
   );
