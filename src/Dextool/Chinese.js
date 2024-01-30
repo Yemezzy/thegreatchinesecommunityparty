@@ -158,7 +158,7 @@ const Chinese = () => {
   return (
     <div className="bg-[#FC0000]">
       <nav className="px-5 py-5 flex justify-between bg-red-500 text-gray-100">
-        <p className="text-sm font-bold">The Great Chinese Community</p>
+        <p className="text-sm font-bold">The Great Chinese Communist party</p>
         <FaBars />
       </nav>
 
@@ -199,15 +199,10 @@ const Chinese = () => {
         </div>
       </div>
 
-      <div className="grid grid-rows-3 md:grid-rows-none md:grid-cols-3 bg-[#FC0000] gap-3 p-2 pt-5 md:pt-10">
-        <div>
-          <img src="/red.gif" alt="" className="" />
-        </div>
-        <div>
-          <img src="/green.gif" alt="" className="" />
-        </div>
-        <div>
-          <img src="/flag.gif" alt="" className="w-[100%]" />
+      <div className="">
+      
+        <div className="fine w-full h-[10rem]">
+   
         </div>
         <div>{/* <img src="/china.gif" alt="" className="w-[100%]" /> */}</div>
       </div>

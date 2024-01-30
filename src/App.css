@@ -10,6 +10,17 @@
 .screen{
   display: block;
 }
+.fine{
+  background-image: url(/public/flag.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blue{
+  background-color: green;
+      width: 50%;
+  padding: 2%;
+}
 .red{
 background-color: brown;
   width: 50%;
