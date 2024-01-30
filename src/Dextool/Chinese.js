@@ -79,7 +79,10 @@ const Chinese = () => {
           startaudio.pause();
         lastaudio.play();
         setHidden("hidden");
-      setAns("");
+          setAns("");
+          setTimeout(() => {
+            window.location.href = "/";
+          }, 10000);
       setAnswers("");
       }, 3000);
     }
