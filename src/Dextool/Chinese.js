@@ -209,7 +209,7 @@ const Chinese = () => {
             </div>
           </section>
           <div className="md:ml-16 mt-2 md:mt-5">
-            <p className="text- font-semibold underline">
+            <p className="text-sm font-semibold underline">
               Contract Adderss: BqHjiRyo76d1o5C1cxCpqyYV89p4iPpnrYfuMsbierHg
             </p>
             <div className="pt-2 flex gap-2 md:gap-5">
