@@ -209,14 +209,16 @@ const Chinese = () => {
             </div>
           </section>
           <div className="md:ml-16 mt-2 md:mt-5">
-            <p className="text-sm font-semibold underline">Contract Adderss:</p>
+            <p className="text-sm font-semibold underline">
+              Contract Adderss: BqHjiRyo76d1o5C1cxCpqyYV89p4iPpnrYfuMsbierHg
+            </p>
             <div className="pt-2 flex gap-2 md:gap-5">
-              <a href="https://t.me/thegreatChinesecommunistparty">
+              <a href="https://t.me/YuanSol">
                 {" "}
                 <FaTelegram className="md:text-5xl text-2xl" />
               </a>
 
-              <a href="https://x.com/thegreatcommuni?s=21">
+              <a href="https://twitter.com/CCPYuanSOL">
                 <FaTwitterSquare className="md:text-5xl text-2xl" />
               </a>
               <a href="https://twitter.com/CCPYuanSOL">
