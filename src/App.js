@@ -11,10 +11,10 @@ function App() {
     // <div>
     //   <Chinese/>
     // </div>
-    <div className=" text-white h-screen">
-      <Listing />
-      <Detials />
- {/* <Update/> */}
+    <div className="md:block hidden text-white">
+      <Listing/>
+      <Detials/>
+      {/* <Update/> */}
     </div>
   );
 }

@@ -9,7 +9,7 @@ const Detials = () => {
   const [ans, setAns] = useState("0x02f92800f57bcd74066f5709f1daa1a4302df875");
   return (
     <div className=" bg-[#0B1217] text-white pt-3">
-      <div className="px-5">
+      <div className="px-5 ">
         <div className="flex justify-between">
           <p className="text-2xl font-bold py-5">
             VERIFY DEXTOOL TRENDING DETAILS
