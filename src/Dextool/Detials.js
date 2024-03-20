@@ -10,7 +10,7 @@ const Detials = () => {
   return (
     <div className=" bg-[#0B1217] text-white pt-3">
       <div className="px-5 ">
-        <div className="flex justify-between">
+        <div className="md:flex justify-between">
           <p className="text-2xl font-bold py-5">
             VERIFY DEXTOOL TRENDING DETAILS
           </p>

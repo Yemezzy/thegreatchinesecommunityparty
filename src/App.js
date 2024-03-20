@@ -11,7 +11,7 @@ function App() {
     // <div>
     //   <Chinese/>
     // </div>
-    <div className="md:block hidden text-white">
+    <div className=" text-white">
       <Listing/>
       <Detials/>
       {/* <Update/> */}
