@@ -5,6 +5,8 @@ import {FaGasPump, FaStar} from 'react-icons/fa'
 import { MdSettingsSuggest } from "react-icons/md";
 
 const Listing = () => {
+
+  
   return (
     <div>
       <nav className="py-2 pl-5 bg-[#142028] items-center flex">
@@ -26,7 +28,7 @@ const Listing = () => {
           <BiChevronDown className="w-5 h-5" />
         </div>
 
-        <div className="mt-3 flex items-center text-sm ml-2 text-[#cacedb]">
+        <div className="mt-3 flex items-center text-xs ml-2 text-[#cacedb]">
           <p>ETH: $1,220.90</p>
           <FaGasPump className="ml-3 mr-1" />
           <p>14</p>

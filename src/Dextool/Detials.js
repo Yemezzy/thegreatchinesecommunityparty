@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFire, FaTiktok, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { BsTelegram } from "react-icons/bs";
 import { FaMedium } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
 const Detials = () => {
+
+  const [ans, setAns] = useState("0x02f92800f57bcd74066f5709f1daa1a4302df875");
   return (
     <div className=" bg-[#0B1217] text-white pt-3">
       <div className="px-5">
@@ -26,7 +28,9 @@ const Detials = () => {
               <p className="font-bold flex items-center text-[#cacedb] gap-3">
                 # Top 2 <FaFire className="text-yellow-500" />
               </p>
-              <p className="font-bold text-xs text-[#00B8D8]">$1700 - 24hours</p>
+              <p className="font-bold text-xs text-[#00B8D8]">
+                $1700 - 24hours
+              </p>
             </section>
             <section className="w-[8rem] rounded-lg p-2 text-white bg-[#00a2bf]">
               <p className="font-bold flex items-center  gap-3">
@@ -97,13 +101,23 @@ const Detials = () => {
               </label>
               <p className="font-semibold text-[#cacedb] mb-2 text-lg">$1000</p>
               <label htmlFor="" className="text-lg  font-semibold">
-                Api Endpoints Link:
+                Payment Address:
               </label>
               <input
                 readOnly
-                placeholder="https://open-api.dextools.io/paid/v2/token/ether/0x02f92800f57bcd74066f5709f1daa1a4302df875"
+                placeholder=""
+                value={ans}
                 className="font-semibold border-2 py-2 bg-transparent outline-none px-2 text-[#cacedb] mb-3 text-lg w-full mt-1"
               />
+
+              <br />
+              <p className="text-lg flex justify-between font-semibold">
+                <span>Payment hash:</span>
+                <span className="text-sm hover:underline text-blue-700">
+                
+                </span>
+              </p>
+              <input className="font-semibold border-2 py-2 bg-transparent outline-none px-2 text-[#cacedb] mb-2 text-lg w-full " />
               <br />
               <label htmlFor="" className="text-lg  font-semibold">
                 Api Verfication Code:
@@ -113,14 +127,6 @@ const Detials = () => {
                 placeholder="I0Y54zVuOD85N5ILE4agl8Etffiw2eXB"
                 className="font-semibold border-2 py-2 bg-transparent outline-none px-2 text-[#cacedb] mb-3 text-lg w-full mt-1"
               />
-              <br />
-              <p className="text-lg flex justify-between font-semibold">
-                <span>Validation Code:</span>
-                <span className="text-sm hover:underline text-blue-700">
-                  Get vefification code?
-                </span>
-              </p>
-              <input className="font-semibold border-2 py-2 bg-transparent outline-none px-2 text-[#cacedb] mb-2 text-lg w-full " />
             </div>
           </div>
           <div>

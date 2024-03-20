@@ -8,14 +8,14 @@ import Update from './Dextool/Update';
 
 function App() {
   return (
-    <div>
-      <Chinese/>
+    // <div>
+    //   <Chinese/>
+    // </div>
+    <div className=" text-white h-screen">
+      <Listing />
+      <Detials />
+ {/* <Update/> */}
     </div>
-//     <div className=" text-white h-screen">
-//       <Listing />
-//       <Detials />
-//  <Update/>
-//     </div>
   );
 }
 
